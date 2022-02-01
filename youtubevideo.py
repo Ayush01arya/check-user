@@ -42,6 +42,27 @@ if uploade is not None:
             converted=cv2.cvtColor(converted,cv2.COLOR_RGB2BGR)
             blur=cv2.GaussianBlur(converted,(slider,slider),0,0)
             st.image(blur,channels='BGR',width=300)
+        elif filter=='Thermal Effect[1]':
+            converted_img = np.array(image.convert('RGB'))
+            gray_scale = cv2.cvtColor(converted_img, cv2.COLOR_RGB2HSV)
+            st.image(gray_scale, width=300)
+        elif filter=='Thermal Effect[2]':
+            converted_img = np.array(image.convert('RGB'))
+            gray_scale = cv2.cvtColor(converted_img, cv2.COLOR_RGB2HLS)
+            st.image(gray_scale, width=300)
+        elif filter=='Love Effect':
+            converted_img = np.array(image.convert('RGB'))
+            gray_scale = cv2.cvtColor(converted_img, cv2.COLOR_RGB2LUV)
+            st.image(gray_scale, width=300)
+        elif filter=='Night Effect':
+            converted_img = np.array(image.convert('RGB'))
+            gray_scale = cv2.cvtColor(converted_img, cv2.COLOR_RGB2BGR)
+            st.image(gray_scale, width=300)
+        elif filter=='Ayush':
+            converted_img = np.array(image.convert('RGB'))
+            gray_scale = cv2.cvtColor(converted_img, cv2.COLOR_RGB2LUV)
+            st.image(gray_scale, width=300)
+
         
         else:
             st.image(image,width=300)
