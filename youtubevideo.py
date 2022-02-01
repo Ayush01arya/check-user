@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+from cv2 import *
 import cv2
 from PIL import Image,ImageEnhance
 st.title("Photo Converter")
