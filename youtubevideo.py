@@ -3,12 +3,12 @@ import numpy as np
 import cv2
 from PIL import Image,ImageEnhance
 st.title("Photo Converter")
-image=Image.open('ayushlogo.png')
-col1,col2=st.columns([0.8,0.2])
-with col1:
-    st.markdown("""<style> font{font-size:35px; font-family:'Cooper Black';color:#FF9633;<style>""",unsafe_allow_html=True)
-with col2:
-    st.image(image,width=150)
+#image=Image.open('ayushlogo.png')
+#col1,col2=st.columns([0.8,0.2])
+#with col1:
+#    st.markdown("""<style> font{font-size:35px; font-family:'Cooper Black';color:#FF9633;<style>""",unsafe_allow_html=True)
+#with col2:
+#    st.image(image,width=150)
 
 st.sidebar.markdown('<h1 class="font">Photo Converter</h1>',unsafe_allow_html=True)
 with st.sidebar.expander("About the app"):
